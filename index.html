@@ -1,307 +1,206 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Learning Project</title>
 </head>
-
 <body>
 
-    <h1>🌐 HTML Learning Project</h1>
+    <h1>HTML Learning Project</h1>
     <p>Master the Building Blocks of the Web</p>
 
-    <hr>
-
-    <h2>🚀 What is HTML?</h2>
-
+    <h2>1. What is HTML?</h2>
     <p>
-        <strong>HTML (HyperText Markup Language)</strong> is the standard markup
-        language for creating web pages. Think of it as the skeleton or foundation
-        of every website you visit.
+        HTML (HyperText Markup Language) is the standard markup language
+        used to create web pages. It provides the basic structure of a website.
     </p>
 
-    <h3>Key Points:</h3>
-
+    <h3>Key Points</h3>
     <ul>
-        <li><strong>HyperText:</strong> Text with links to other texts</li>
-        <li><strong>Markup:</strong> A way to annotate text to show structure and meaning</li>
-        <li><strong>Language:</strong> A set of rules and syntax for creating web content</li>
+        <li><strong>HyperText:</strong> Text that links to other pages.</li>
+        <li><strong>Markup:</strong> Tags used to organize content.</li>
+        <li><strong>Language:</strong> Rules for creating web content.</li>
     </ul>
 
-    <h3>🏗️ How HTML Works</h3>
-
+    <h3>How HTML Works</h3>
     <p>
-        HTML uses <strong>tags</strong> to define elements.
-        Tags are keywords surrounded by angle brackets like
-        <code>&lt;tagname&gt;</code>. Most tags come in pairs:
+        HTML uses tags to define elements on a web page.
+        Most tags have an opening tag and a closing tag.
     </p>
 
-    <pre><code>&lt;tagname&gt;Content goes here&lt;/tagname&gt;
-&lt;h1&gt;This is a heading&lt;/h1&gt;
-&lt;p&gt;This is a paragraph&lt;/p&gt;</code></pre>
-
-    <hr>
-
-    <h2>📋 Basic HTML Structure</h2>
-
-    <p>Every HTML document follows this basic structure:</p>
-
-    <h3>Structure Breakdown:</h3>
+    <h2>2. Basic HTML Structure</h2>
+    <p>A basic HTML document contains the following elements:</p>
 
     <ul>
-        <li><strong>&lt;!DOCTYPE html&gt;</strong> - Tells the browser this is HTML5</li>
-        <li><strong>&lt;html&gt;</strong> - Root element of the page</li>
-        <li><strong>&lt;head&gt;</strong> - Contains metadata (not visible on page)</li>
-        <li><strong>&lt;body&gt;</strong> - Contains visible content</li>
+        <li><strong>&lt;!DOCTYPE html&gt;:</strong> Defines an HTML5 document.</li>
+        <li><strong>&lt;html&gt;:</strong> The root element.</li>
+        <li><strong>&lt;head&gt;:</strong> Contains document information.</li>
+        <li><strong>&lt;title&gt;:</strong> Defines the page title.</li>
+        <li><strong>&lt;body&gt;:</strong> Contains visible content.</li>
     </ul>
 
-    <hr>
+    <h3>Example</h3>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;p&gt;Welcome to my website.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
 
-    <h2>🏷️ Essential HTML Tags</h2>
+    <h2>3. Essential HTML Tags</h2>
+    <ul>
+        <li><strong>&lt;h1&gt; to &lt;h6&gt;:</strong> Headings.</li>
+        <li><strong>&lt;p&gt;:</strong> Paragraphs.</li>
+        <li><strong>&lt;a&gt;:</strong> Links.</li>
+        <li><strong>&lt;img&gt;:</strong> Images.</li>
+        <li><strong>&lt;div&gt;:</strong> Groups of content.</li>
+        <li><strong>&lt;ul&gt; and &lt;ol&gt;:</strong> Lists.</li>
+        <li><strong>&lt;li&gt;:</strong> List items.</li>
+    </ul>
 
-    <table border="1">
-        <tr>
-            <th>Tag</th>
-            <th>Purpose</th>
-            <th>Example</th>
-        </tr>
-        <tr>
-            <td>&lt;h1&gt; - &lt;h6&gt;</td>
-            <td>Headings (largest to smallest)</td>
-            <td>&lt;h1&gt;Main Title&lt;/h1&gt;</td>
-        </tr>
-        <tr>
-            <td>&lt;p&gt;</td>
-            <td>Paragraphs</td>
-            <td>&lt;p&gt;This is text&lt;/p&gt;</td>
-        </tr>
-        <tr>
-            <td>&lt;a&gt;</td>
-            <td>Links</td>
-            <td>&lt;a href="url"&gt;Link text&lt;/a&gt;</td>
-        </tr>
-        <tr>
-            <td>&lt;img&gt;</td>
-            <td>Images</td>
-            <td>&lt;img src="image.jpg" alt="Description"&gt;</td>
-        </tr>
-        <tr>
-            <td>&lt;div&gt;</td>
-            <td>Container/section</td>
-            <td>&lt;div&gt;Content here&lt;/div&gt;</td>
-        </tr>
-        <tr>
-            <td>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</td>
-            <td>Lists</td>
-            <td>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</td>
-        </tr>
-    </table>
+    <h3>Live Examples</h3>
+    <h1>This is an H1 Heading</h1>
+    <h2>This is an H2 Heading</h2>
+    <h3>This is an H3 Heading</h3>
 
-    <h3>🎯 Live Examples:</h3>
+    <p>This is a paragraph with <strong>bold text</strong> and <em>italic text</em>.</p>
 
-    <h1>This is an H1 heading</h1>
-    <h2>This is an H2 heading</h2>
-    <h3>This is an H3 heading</h3>
+    <p><a href="https://www.google.com">Visit Google</a></p>
 
-    <p>
-        This is a paragraph with
-        <strong>bold text</strong> and
-        <em>italic text</em>.
-    </p>
-
-    <p>Here's a <a href="#">sample link</a>.</p>
-
-    <h4>Unordered List:</h4>
-
+    <h4>Unordered List</h4>
     <ul>
         <li>First item</li>
         <li>Second item</li>
         <li>Third item</li>
     </ul>
 
-    <h4>Ordered List:</h4>
-
+    <h4>Ordered List</h4>
     <ol>
-        <li>Step one</li>
-        <li>Step two</li>
-        <li>Step three</li>
+        <li>First step</li>
+        <li>Second step</li>
+        <li>Third step</li>
     </ol>
 
-    <hr>
-
-    <h2>📝 HTML Forms</h2>
-
-    <p>Forms allow users to input data.</p>
+    <h2>4. HTML Forms</h2>
+    <p>
+        Forms allow users to enter and submit information through a web page.
+    </p>
 
     <form>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name">
-
         <br><br>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email">
-
-        <br><br>
-
-        <label for="subject">Subject:</label>
-        <select id="subject" name="subject">
-            <option>Question</option>
-            <option>Feedback</option>
-            <option>Support</option>
-        </select>
-
         <br><br>
 
         <label for="message">Message:</label>
         <textarea id="message" name="message"></textarea>
-
         <br><br>
 
         <button type="submit">Submit</button>
     </form>
 
-    <hr>
-
-    <h2>🎨 HTML Attributes</h2>
-
-    <p>Attributes provide additional information about HTML elements:</p>
-
-    <pre><code>&lt;img src="photo.jpg" alt="A beautiful sunset" width="300" height="200"&gt;
-&lt;a href="https://example.com" target="_blank" title="Visit Example"&gt;Click here&lt;/a&gt;
-&lt;div class="container" id="main-content" style="color: blue;"&gt;Content&lt;/div&gt;</code></pre>
-
-    <h3>Important Attributes:</h3>
+    <h2>5. HTML Attributes</h2>
+    <p>
+        Attributes provide additional information about HTML elements.
+    </p>
 
     <ul>
-        <li><strong>id</strong> - Unique identifier for an element</li>
-        <li><strong>class</strong> - Groups elements for styling</li>
-        <li><strong>src</strong> - Source file for images, videos, etc.</li>
-        <li><strong>href</strong> - URL for links</li>
-        <li><strong>alt</strong> - Alternative text for images</li>
-        <li><strong>style</strong> - Inline CSS styling</li>
+        <li><strong>id:</strong> Identifies an element.</li>
+        <li><strong>class:</strong> Groups elements.</li>
+        <li><strong>src:</strong> Specifies a file source.</li>
+        <li><strong>href:</strong> Specifies a link destination.</li>
+        <li><strong>alt:</strong> Provides alternative text for images.</li>
     </ul>
 
-    <hr>
+    <h3>Example</h3>
+    <p>&lt;a href="https://example.com"&gt;Visit Website&lt;/a&gt;</p>
+    <p>&lt;img src="photo.jpg" alt="A photo"&gt;</p>
 
-    <h2>📊 Tables in HTML</h2>
-
-    <p>Tables organize data in rows and columns:</p>
-
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>City</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>John</td>
-                <td>25</td>
-                <td>New York</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h4>Sample Table:</h4>
+    <h2>6. Tables in HTML</h2>
+    <p>
+        HTML tables organize data into rows and columns.
+        The table uses &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; tags.
+    </p>
 
     <table border="1">
         <tr>
-            <th>Student</th>
+            <th>Name</th>
             <th>Subject</th>
             <th>Grade</th>
-            <th>Status</th>
         </tr>
-
         <tr>
-            <td>Alice Johnson</td>
+            <td>Alice</td>
             <td>Mathematics</td>
-            <td>A+</td>
-            <td>✅ Passed</td>
+            <td>A</td>
         </tr>
-
         <tr>
-            <td>Bob Smith</td>
+            <td>Bob</td>
             <td>Physics</td>
             <td>B</td>
-            <td>✅ Passed</td>
         </tr>
-
         <tr>
-            <td>Carol Davis</td>
+            <td>Carol</td>
             <td>Chemistry</td>
             <td>A</td>
-            <td>✅ Passed</td>
         </tr>
     </table>
 
-    <hr>
+    <h2>7. Project Structure</h2>
+    <p>A simple website project can contain these files and folders:</p>
 
-    <h2>🗂️ Project Structure</h2>
-
-    <p>Here's how to organize your HTML project:</p>
-
-    <pre><code>my-website/
-│
-├── index.html        (Main page)
-├── about.html        (About page)
-├── contact.html      (Contact page)
-│
-├── css/
-│   └── styles.css    (CSS stylesheets)
-│
-├── js/
-│   └── script.js     (JavaScript files)
-│
-└── images/
-    ├── logo.png
-    ├── hero-image.jpg
-    └── gallery/
-        ├── photo1.jpg
-        └── photo2.jpg</code></pre>
-
-    <hr>
-
-    <h2>🎯 Next Steps in Your Learning Journey</h2>
-
-    <p>After mastering HTML, continue with:</p>
+    <pre>
+my-website/
+|-- index.html
+|-- about.html
+|-- contact.html
+|-- css/
+|-- js/
+|-- images/
+    </pre>
 
     <ul>
-        <li><strong>CSS (Cascading Style Sheets)</strong> - Style your HTML elements</li>
-        <li><strong>JavaScript</strong> - Add interactivity and dynamic behavior</li>
-        <li><strong>Responsive Design</strong> - Make websites work on all devices</li>
-        <li><strong>Web Accessibility</strong> - Make websites usable for everyone</li>
-        <li><strong>Modern Frameworks</strong> - React, Vue.js, or Angular</li>
+        <li><strong>index.html:</strong> Main page.</li>
+        <li><strong>about.html:</strong> About page.</li>
+        <li><strong>contact.html:</strong> Contact page.</li>
+        <li><strong>css/:</strong> CSS files.</li>
+        <li><strong>js/:</strong> JavaScript files.</li>
+        <li><strong>images/:</strong> Image files.</li>
     </ul>
 
-    <hr>
-
-    <h2>🔧 Development Tools</h2>
-
-    <h3>Recommended Tools:</h3>
-
+    <h2>8. Next Steps in Your Learning Journey</h2>
     <ul>
-        <li><strong>Text Editors:</strong> VS Code, Sublime Text, Atom</li>
-        <li><strong>Browsers:</strong> Chrome DevTools, Firefox Developer Tools</li>
-        <li><strong>Version Control:</strong> Git and GitHub</li>
-        <li><strong>Online Editors:</strong> CodePen, JSFiddle, Repl.it</li>
+        <li><strong>CSS:</strong> Controls the appearance of web pages.</li>
+        <li><strong>JavaScript:</strong> Adds interactivity.</li>
+        <li><strong>Responsive Design:</strong> Adapts pages to different screens.</li>
+        <li><strong>Web Accessibility:</strong> Makes websites usable for everyone.</li>
+        <li><strong>Modern Frameworks:</strong> React, Vue.js, and Angular.</li>
     </ul>
 
-    <hr>
+    <h2>9. Development Tools</h2>
+    <ul>
+        <li><strong>Text Editors:</strong> Visual Studio Code and Sublime Text.</li>
+        <li><strong>Browsers:</strong> Google Chrome and Mozilla Firefox.</li>
+        <li><strong>Version Control:</strong> Git and GitHub.</li>
+        <li><strong>Online Editors:</strong> CodePen and JSFiddle.</li>
+    </ul>
 
-    <h2>🎉 Congratulations!</h2>
-
+    <h2>Congratulations!</h2>
     <p>
-        You've completed the HTML Learning Project!
-        You now understand the fundamentals of HTML and can create your own web pages.
-        Keep practicing and building projects to strengthen your skills.
+        You have completed the HTML Learning Project.
+        You have learned the basic structure of HTML, essential tags,
+        forms, attributes, and tables. Keep practicing to improve your skills.
     </p>
 
 </body>
-
 </html>
