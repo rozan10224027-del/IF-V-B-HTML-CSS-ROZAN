@@ -1,0 +1,364 @@
+
+:root {
+    --bg-start: #667eea;
+    --bg-end: #764ba2;
+    --card-bg: #ffffff;
+    --text-main: #2c3e50;
+    --text-muted: #5f6b7a;
+    --accent: #3498db;
+    --accent-soft: #e8f8f5;
+    --border: #dce5ee;
+    --code-bg: #2c3e50;
+    --code-text: #ecf0f1;
+    --shadow: 0 3px 12px rgba(31, 45, 61, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+    color: var(--text-main);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 850px;
+    width: calc(100% - 30px);
+    margin: 12px auto;
+    padding: 24px 15px;
+    background: #f8f9ff;
+    border-radius: 10px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.16);
+}
+
+.header {
+    text-align: center;
+    padding: 12px 15px 22px;
+    margin-bottom: 12px;
+    color: var(--text-main);
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.header h1 {
+    margin: 0 0 4px;
+    font-size: 1.8rem;
+    line-height: 1.3;
+}
+
+.header p {
+    margin: 0;
+    color: #7b8794;
+    font-size: 0.9rem;
+}
+
+.card {
+    position: relative;
+    background: var(--card-bg);
+    border-left: 4px solid #54a9ff;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin-bottom: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(31, 45, 61, 0.16);
+}
+
+.card h2 {
+    color: var(--accent);
+    font-size: 1.35rem;
+    line-height: 1.4;
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--accent);
+    font-weight: 700;
+}
+
+.card h3 {
+    font-size: 1rem;
+    color: var(--text-main);
+    margin: 16px 0 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card p {
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin: 8px 0 12px;
+}
+
+.info-box {
+    padding: 12px 14px;
+    margin: 12px 0;
+    border-left: 4px solid #20b2aa;
+    border-radius: 6px;
+    background: linear-gradient(120deg, #b4eeee, #e8f8f5);
+}
+
+.info-box h3 {
+    margin-top: 0;
+    color: #176b70;
+}
+
+.pink-box {
+    background: linear-gradient(120deg, #ffb6c9, #ffc7e7);
+    border-left: 4px solid #e879a9;
+}
+
+.pink-box h2,
+.pink-box h3 {
+    color: #8e3c68;
+}
+
+ul,
+ol {
+    padding-left: 22px;
+    margin: 8px 0 12px;
+}
+
+li {
+    margin: 3px 0;
+}
+
+strong {
+    color: #263746;
+}
+
+.code-block {
+    position: relative;
+    background: var(--code-bg);
+    color: var(--code-text);
+    border-radius: 5px;
+    padding: 18px 12px 14px;
+    margin: 12px 0;
+    overflow-x: auto;
+}
+
+.code-block pre {
+    margin: 0;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.code-block code {
+    color: var(--code-text);
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.code-label {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: bold;
+    padding: 1px 5px;
+    border-radius: 3px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(31, 45, 61, 0.08);
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 0.9rem;
+}
+
+th {
+    background: #3498db;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    padding: 9px 10px;
+    border-bottom: 1px solid #edf0f4;
+    color: #4b5563;
+}
+
+tbody tr:nth-child(even) {
+    background: #f1f7fc;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.live-example {
+    background: #f4f9ff;
+    border: 1px dashed #54a9ff;
+    border-radius: 7px;
+    padding: 16px;
+    margin-top: 12px;
+}
+
+.live-example h1 {
+    font-size: 1.7rem;
+    text-align: center;
+    color: #2c3e50;
+    margin: 4px 0 12px;
+}
+
+.live-example h2 {
+    font-size: 1.25rem;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 5px;
+}
+
+.live-example h3 {
+    font-size: 1rem;
+}
+
+.live-example h4 {
+    margin: 12px 0 5px;
+}
+
+a {
+    color: #2980b9;
+}
+
+a:hover {
+    color: #764ba2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-weight: 600;
+    margin-top: 3px;
+    color: #465566;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 9px 10px;
+    font: inherit;
+    color: #34495e;
+    border: 1px solid #cbd5df;
+    border-radius: 4px;
+    background: #fff;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #b8dfff;
+    border-color: #3498db;
+}
+
+textarea {
+    min-height: 76px;
+    resize: vertical;
+}
+
+button {
+    align-self: flex-start;
+    margin-top: 8px;
+    padding: 9px 16px;
+    border: none;
+    border-radius: 4px;
+    background: #3498db;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2874a6;
+}
+
+.status {
+    color: #287b47;
+    background: #e7f7ed;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.practice-card {
+    background: linear-gradient(120deg, #ffb6c9, #ffc7e7);
+    border-left: 4px solid #e879a9;
+}
+
+.practice-card h2 {
+    color: #168bc6;
+    border-bottom-color: #3498db;
+}
+
+.practice-card h3 {
+    color: #8e3c68;
+}
+
+.footer {
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 22px 20px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.footer h2 {
+    font-size: 1.3rem;
+    margin: 0 0 10px;
+}
+
+.footer p {
+    margin: 8px 0;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: calc(100% - 16px);
+        margin: 8px auto;
+        padding: 16px 10px;
+    }
+
+    .header h1 {
+        font-size: 1.4rem;
+    }
+
+    .card {
+        padding: 16px 13px;
+    }
+
+    .card h2 {
+        font-size: 1.15rem;
+    }
+
+    table {
+        font-size: 0.78rem;
+    }
+
+    th,
+    td {
+        padding: 7px 6px;
+    }
+}
